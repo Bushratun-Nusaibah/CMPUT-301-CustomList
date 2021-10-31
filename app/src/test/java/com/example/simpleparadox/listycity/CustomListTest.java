@@ -58,6 +58,17 @@ public class CustomListTest {
 
     }
 
+    @Test
+    void testCountCities(){
+
+        //adds two new cities to the list
+        City city1 = new City ("Regina", "Saskatchewan");
+        list.addCity(city1);
+
+
+        assertEquals(1, list.countCities());
+    }
+
 
 
 }
